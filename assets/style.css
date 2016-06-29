@@ -128,6 +128,22 @@ nav a:hover {
 	top: 110px;
 }
 
+.button {
+	background-color: #4aaaa5;
+	border: none;
+	color: white;
+	padding: 15px 40px;
+	margin-top: 10px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.button:hover {
+	background-color: #ddd;
+}
+
 aside {
 	width: 270px;
 	background-color: white;
