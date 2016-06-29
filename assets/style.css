@@ -1,3 +1,27 @@
+/* ------------ STICKY FOOTER -------------- */
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -103px;
+}
+
+.footer, .push {
+	height: 103px;
+	clear: both;
+}
+
+/* ----------- General Stuff ----------- */
+
 * {
 	color: #777;
 	box-sizing: border-box;
@@ -6,6 +30,8 @@
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
+	background-image: url("images/dark_embroidery.png");
+	background-color: gray;
 }
 
 .clearfix {
@@ -76,11 +102,6 @@ nav a:hover {
 
 /* ---------- MIDDLE SECTION -------------*/
 
-#middle {
-	background-image: url("images/dark_embroidery.png");
-	background-color: gray;
-}
-
 #main {
 	padding: 40px 0;
 	overflow: auto;
@@ -128,6 +149,10 @@ nav a:hover {
 	top: 110px;
 }
 
+.portfolio p:hover {
+	background-color: #ddd;
+}
+
 .button {
 	background-color: #4aaaa5;
 	border: none;
@@ -140,7 +165,7 @@ nav a:hover {
 	font-size: 18px;
 }
 
-.button:hover {
+.button:active {
 	background-color: #ddd;
 }
 
@@ -156,7 +181,10 @@ aside img {
 	width: 60px;
 	height: 60px;
 	margin-right: 4px;
+}
 
+aside img:hover {
+	padding: 2px;
 }
 
 
@@ -169,3 +197,4 @@ footer {
 	text-align: center;
 	padding: 40px;
 }
+
